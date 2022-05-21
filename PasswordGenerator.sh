@@ -39,6 +39,7 @@ fi
 
 
 # Generare parola cu elementele dorite
+echo "Parola generata este: "
 tr -dc "$cifre""$litereMici""$litereMari""$simboluri" </dev/urandom | head -c "$nrCaractere" ; echo
 
 # Daca nu merge linia 43, foloseste urmatoarea linie
